@@ -1,0 +1,49 @@
+@import "variables";
+
+.dynamic-text--section {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 85px 0;
+
+  .container {
+    max-width: 770px;
+  }
+
+  .heading {
+    display: block;
+    color: $text-color;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: .01em;
+    font-weight: 700;
+    margin: 0 0 15px;
+  }
+
+  .content {
+    color: $dark-color;
+    font-size: 22px;
+    line-height: 34px;
+    font-weight: 500;
+    margin: 0 0 33px;
+
+    p {
+      margin: 0;
+    }
+  }
+}
+
+@include media(tablet) {
+  .dynamic-text--section {
+    padding: 57px 0;
+
+    .heading {
+      margin: 0 0 19px;
+    }
+
+    .content {
+      font-size: 18px;
+      line-height: 28px;
+      margin: 0 0 44px;
+    }
+  }
+}

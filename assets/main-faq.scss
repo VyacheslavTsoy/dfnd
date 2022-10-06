@@ -1,0 +1,136 @@
+@import "variables";
+
+.faq--section {
+  padding: 77px 0 180px;
+
+  .faq__title {
+    text-align: center;
+    padding-top: 4rem;
+    margin-bottom: 5.5rem;
+    font-weight: 700;
+
+    @include media(tablet) {
+      padding: 3rem 0 0;
+      margin-bottom: 3rem;
+    }
+  }
+
+  &.faq--small {
+    padding: 7.7rem 0 14.9rem;
+
+    @include media(tablet) {
+      padding: 4.6rem 0 8.4rem;
+    }
+
+    .accordion__btn-opener {
+      @include media(tablet) {
+        font-size: 1.7rem;
+        letter-spacing: 0.01em;
+        padding: 1.8rem 0;
+      }
+    }
+
+    .faq__title {
+      @include media(tablet) {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        font-size: 2.2rem;
+        letter-spacing: -0.01em;
+        line-height: 1.27;
+        margin-bottom: 3.4rem;
+      }
+    }
+
+    .container {
+      max-width: 69rem;
+    }
+  }
+
+  .container {
+    max-width: 969px;
+  }
+
+  .accordion__slide {
+    border-bottom: 1px solid $color-e7;
+    padding: 0 16px 8px 32px;
+  }
+
+  .accordion__btn-opener {
+    background: transparent;
+    border: none;
+    font-size: 17px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: $dark-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+    letter-spacing: .01em;
+    padding: 20px 0 11px;
+
+    .icon {
+      width: 10px;
+      height: 10px;
+      display: block;
+      margin: 0 0 0 35px;
+      flex-basis: 10px;
+      flex-grow: 0;
+      flex-shrink: 0;
+
+      path {
+        fill: $dark-color;
+      }
+    }
+  }
+
+  .accordion-title {
+    text-align: left;
+  }
+
+  .accordion__text {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .5s cubic-bezier(0, 1, 0, 1);
+    margin: 0;
+    max-width: 750px;
+    font-size: 17px;
+    color: $text-color;
+  }
+
+  .accordion__slide {
+    &.active {
+      .accordion__text {
+        max-height: 1000px;
+        transition: max-height 1s ease-in-out;
+        padding-bottom: 27px;
+      }
+
+      .icon {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  @include media(tablet) {
+    padding: 37px 0 45px;
+
+    .accordion__slide {
+      padding: 0;
+
+      &.active {
+        padding: 0 0 8px;
+      }
+    }
+
+    .accordion__btn-opener {
+      font-size: 16px;
+      padding: 11px 0 13px;
+    }
+
+    .accordion__text {
+      font-size: 16px;
+    }
+  }
+}

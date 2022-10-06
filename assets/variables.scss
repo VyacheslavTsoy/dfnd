@@ -1,0 +1,48 @@
+$text-color: #525962;
+$white-color: #fff;
+$dark-color: #1F1F1F;
+$black-color: #000;
+$grey-color: #F8F8F9;
+$color-d3: #d3d8df;
+$color-e7: #e7eaee;
+$color-34: #343434;
+$color-59: #595859;
+
+@mixin media($breakpoint) {
+  @if $breakpoint==desktop {
+    @media only screen and (max-width: 1440px) {
+    @content;
+    }
+  }
+  @if $breakpoint==desktopS {
+    @media only screen and (max-width: 1280px) {
+    @content;
+    }
+  }
+  @if $breakpoint==tabletL {
+    @media only screen and (max-width: 1023px) {
+    @content;
+    }
+  }
+  @if $breakpoint==tablet {
+    @media only screen and (max-width: 767px) {
+    @content;
+    }
+  }
+  @if $breakpoint==mobile {
+    @media only screen and (max-width: 479px) {
+    @content;
+    }
+  }
+  @if $breakpoint==mobileS {
+    @media only screen and (max-width: 374px) {
+    @content;
+    }
+  }
+
+  @if $breakpoint==desktopMin {
+    @media only screen and (min-width: 768px) {
+    @content;
+    }
+  }
+}  

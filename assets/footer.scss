@@ -1,0 +1,379 @@
+@import "variables";
+
+.footer {
+  background: $black-color;
+  color: $white-color;
+  padding: 55px 0 31px;
+
+  accordion-component {
+    width: 68%;
+  }
+}
+
+.footer-top {
+  font-size: 14px;
+  line-height: 28px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba($color-d3, .5);
+  padding: 0 0 39px;
+  margin: 0 0 17px;
+}
+
+@include media(tabletL) {
+  .footer {
+    padding: 31px 0 24px;
+  }
+
+  .footer-top {
+    flex-wrap: wrap;
+    border: none;
+    padding: 0;
+    margin: 0 0 35px;
+  }
+}
+
+/* Footer menu */
+.footer-menu {
+  display: flex;
+  width: 100%;
+  font-weight: 700;
+
+  .icon {
+    display: none;
+  }
+
+  .accordion__btn-opener {
+    pointer-events: none;
+  }
+}
+
+.footer-menu__item {
+  width: 25%;
+}
+
+.footer-menu__link {
+  color: $white-color;
+  pointer-events: none;
+  font-size: 15px;
+}
+
+.footer-menu-drop {
+  font-weight: 400;
+  margin: 10px 0 0;
+}
+
+.footer-menu-drop__link {
+  color: $white-color;
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    color: rgba($white-color, .5); 
+  }
+}
+
+@include media(tabletL) {
+  .footer {
+    accordion-component {
+      order: 2;
+      width: 100%;
+    }
+
+    .accordion__btn-opener {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      pointer-events: initial;
+      padding: 13px 0 17px;
+      cursor: pointer;
+    }
+
+    .accordion__slide {
+      .accordion__text{
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+        margin: 0;
+      }
+      
+      &.active {
+        .accordion__text {
+          max-height: 1000px;
+          transition: max-height 1s ease-in-out;
+          padding-bottom: 15px;
+        }
+
+        .icon {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+  
+  .footer-menu {
+    order: 2;
+    width: 100%;
+    flex-wrap: wrap;
+    font-size: 15px;
+    line-height: 20px;
+    border-top: 1px solid rgba($color-d3, .5);
+  }
+
+  .footer-menu__item {
+    width: 100%;
+    border-bottom: 1px solid rgba($color-d3, .5);
+
+    .icon {
+      width: 10px;
+      height: 10px;
+      display: block;
+    }
+  }
+  
+  .footer-menu-drop__item {
+    padding-top: 5px;
+  }
+}
+
+/* Socials */
+.footer-socials {
+  .social-sharing__list {
+    margin: 10px -11px 0;
+    overflow: hidden;
+  
+    .icon {
+      path {
+        fill: $white-color;
+      }
+    }
+  }
+
+  .social-sharing__link {
+    &:hover {
+      .icon {
+        path {
+          fill: rgba($white-color, .5);
+        }
+      }
+    }
+  }
+
+  @include media(tabletL) {
+    h4 {
+      font-size: 15px;
+    }
+
+    .social-sharing__list {
+      justify-content: center;
+      margin-top: 13px;
+    }
+  }
+}
+
+/* Payments */
+.footer-payments {
+  margin: 10px 0 0;
+}
+
+.payment-icons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 10px -11px 0;
+  overflow: hidden;
+
+  li {
+    transition: all .3s ease-in-out;
+    padding: 0 11px 7px;
+    opacity: .5;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .icon {
+    width: auto;
+  }
+
+  @include media(tabletL) {
+    justify-content: center;
+  }
+}
+
+/* Footer top right */
+.footer-top--right {
+  width: 32%;
+  color: $white-color;
+
+  h4 {
+    color: $white-color;
+    font-weight: 700;
+    font-size: 15px;
+  }
+}
+
+@include media(tabletL) {
+  .footer-top--right {
+    order: 1;
+    width: 100%;
+    text-align: center;
+    margin: 0 0 11px;
+  }
+}
+
+/* Subscribe form */
+.subscribe-form {
+  .description {
+    padding: 10px 95px 9px 0;
+    line-height: 20px;
+  }
+}
+
+#mailing-list-module {
+  p {
+    margin: 0 0 7px;
+  }
+
+  .klaviyo-form {
+    padding: 0 !important;
+    max-width: 431px !important;
+    margin: 0 0 20px !important;
+  }
+
+  button.needsclick {
+    text-indent: -9999em !important;
+    overflow: hidden !important;
+    width: 51px !important;
+    height: 50px !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    position: relative;
+
+    &::before {
+      content: '>';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+  [data-testid="form-component"] {
+    padding: 0 !important;
+  }
+  
+  input[type="email"] {
+    background: $dark-color !important;
+    border-radius: 0 !important;
+    height: 50px !important;
+    padding: 10px 19px;
+    color: $white-color !important;
+    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif !important;
+
+    &::placeholder {
+      color: rgba($white-color, .8) !important;
+    }
+
+    &:hover {
+      border-color: $white-color !important;
+
+      &[aria-invalid="true"] {
+        border-color: red !important;
+      }
+    }    
+  }
+}
+
+@include media(tabletL) {
+  .subscribe-form {
+    h4 {
+      font-size: 18px;
+    }
+
+    .description {
+      padding: 3px 40px 19px;
+      font-size: 15px;
+    }
+  }
+
+  #mailing-list-module {
+    .klaviyo-form {
+      margin: 0 auto 17px !important;
+    }
+
+    input[type="email"] {
+      height: 45px !important;
+      padding-left: 13px !important;
+      font-size: 15px !important;
+    }
+
+    button.needsclick {
+      width: 44px !important;
+      height: 45px !important;
+    }
+  }
+}
+
+/* Footer bottom */
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  margin: 0 8px 0 0;
+  
+  p {
+    margin: 0 0 0 5px;
+  }
+
+  a {
+    color: $white-color;
+    transition: all .3s ease-in-out;
+    margin-left: 4px;
+
+    &:hover {
+      color: rgba($white-color, .5); 
+    }
+  }
+}
+
+.footer-menu--bottom {
+  display: flex;
+  align-items: center;
+}
+
+.footer-menu--bottom__item {
+  margin: 0 17px 0 5px;
+}
+
+.footer-menu--bottom__link {
+  transition: all .3s ease-in-out;
+  color: $white-color;
+
+  &:hover {
+    color: rgba($white-color, .5);
+  }
+}
+
+@include media(tabletL) {
+  .footer-bottom {
+    flex-wrap: wrap;
+  }
+
+  .copyright,
+  .footer-menu--bottom {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .copyright {
+    margin: 0 0 4px;
+  }
+}

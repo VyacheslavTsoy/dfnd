@@ -1,0 +1,41 @@
+.dynamic-text--section {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 85px 0;
+}
+.dynamic-text--section .container {
+  max-width: 770px;
+}
+.dynamic-text--section .heading {
+  display: block;
+  color: #525962;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.01em;
+  font-weight: 700;
+  margin: 0 0 15px;
+}
+.dynamic-text--section .content {
+  color: #1F1F1F;
+  font-size: 22px;
+  line-height: 34px;
+  font-weight: 500;
+  margin: 0 0 33px;
+}
+.dynamic-text--section .content p {
+  margin: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .dynamic-text--section {
+    padding: 57px 0;
+  }
+  .dynamic-text--section .heading {
+    margin: 0 0 19px;
+  }
+  .dynamic-text--section .content {
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0 0 44px;
+  }
+}

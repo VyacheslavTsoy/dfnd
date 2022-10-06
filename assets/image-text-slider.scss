@@ -1,0 +1,82 @@
+@import "variables";
+@import "swiper-bundle.min.css";
+
+.image-text-slider {
+  padding: 4.7rem 0 10.9rem;
+
+  @include media(tablet) {
+    padding-bottom: 9.8rem;
+    padding-top: 7.4rem;
+  }
+
+  .swiper-slide {
+    width: 100%;
+    max-width: 88.7rem;
+    margin: 0 5.7rem;
+  }
+
+  .swiper-nav {
+    margin-top: 8.7rem;
+
+    @include media(tablet) {
+      margin-top: 4.6rem;
+    }
+  }
+
+  &__slide {
+    &-inner {
+      display: flex;
+
+      @include media(tabletL) {
+        padding: 0 1.6rem;
+      }
+
+      @include media(tablet) {
+        display: block;
+      }
+    }
+
+    &-img {
+      margin-bottom: 3.1rem;
+
+      @include media(tablet) {
+        margin-bottom: 3.4rem;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    &-title {
+      min-width: 34.1rem;
+      padding-right: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      text-transform: uppercase;
+      font-size: 2.2rem;
+      line-height: 2.8rem;
+      color: $black-color;
+
+      @include media(tablet) {
+        color: $dark-color;
+        font-size: 2rem;
+      }
+    }
+
+    &-text {
+      letter-spacing: 0.01em;
+      font-size: 1.7rem;
+      line-height: 1.52;
+      color: $black-color;
+      padding: 0.7rem 1rem 0 0;
+
+      @include media(tablet) {
+        font-size: 1.6rem;
+        line-height: 1.5;
+        color: $text-color;
+      }
+    }
+  }
+}

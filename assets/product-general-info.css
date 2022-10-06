@@ -1,0 +1,71 @@
+.yotpo-main-widget {
+  margin: 0 0 120px !important;
+}
+
+.general-product-info {
+  background: #F8F8F9;
+  padding: 46px 0 37px;
+}
+.general-product-info .container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1300px;
+}
+.general-product-info .general-block {
+  width: 33.33%;
+  max-width: 360px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 24px;
+}
+.general-product-info .description {
+  color: #595859;
+}
+.general-product-info .description a {
+  text-decoration: underline;
+  color: #1F1F1F;
+}
+.general-product-info .description a:hover {
+  text-decoration: none;
+}
+.general-product-info .icon-holder {
+  margin: 0 0 26px;
+}
+.general-product-info .heading {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0 0 21px;
+  color: #1F1F1F;
+  display: block;
+}
+@media only screen and (max-width: 1023px) {
+  .general-product-info {
+    padding: 23px 0 7px;
+  }
+  .general-product-info .container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .general-product-info .general-block {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 54px;
+  }
+}
+
+.product__details-btn {
+  display: none;
+  color: #1F1F1F;
+  font-size: 1.4rem;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.product__details-btn:hover {
+  text-decoration: underline;
+}
+.product__details-btn-wrap {
+  text-align: center;
+}

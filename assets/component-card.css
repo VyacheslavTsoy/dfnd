@@ -1,0 +1,106 @@
+.card {
+  font-size: 1.5rem;
+}
+.card .badge {
+  display: none;
+}
+.card__inner {
+  display: block;
+}
+.card__img {
+  position: relative;
+  background-color: #F5F5F5;
+  overflow: hidden;
+  margin-bottom: 1.4rem;
+}
+.card__img > a {
+  display: block;
+}
+.card__img:hover .card__img-inner--hover {
+  opacity: 1;
+}
+.card__img-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card__img-inner--hover {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  transition: all ease 350ms;
+}
+.card__img img {
+  height: auto;
+  width: 100%;
+}
+.card__quick-view {
+  position: absolute;
+  bottom: 0.9rem;
+  left: 1.2rem;
+  right: 1.2rem;
+  background-color: #1F1F1F;
+  border: 0.1rem solid #1F1F1F;
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+  line-height: 4.2rem;
+  white-space: nowrap;
+  transition: all ease 500ms;
+  font-size: 1.5rem;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+}
+.card__quick-view:hover, .card__quick-view.loading {
+  background-color: #fff;
+  color: #1F1F1F;
+}
+@media only screen and (max-width: 767px) {
+  .card__quick-view {
+    display: none;
+  }
+}
+.card:hover .card__quick-view, .card__quick-view.loading {
+  bottom: 0.9rem;
+  opacity: 1;
+  visibility: visible;
+  transition: all ease 250ms;
+}
+.card__heading {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 767px) {
+  .card__heading {
+    font-size: 1.4rem;
+    line-height: 1.28;
+  }
+}
+.card__heading,
+.card__heading a {
+  color: #1F1F1F;
+}
+.card__price,
+.card .price .price-item {
+  font-size: 1.5rem;
+  line-height: 1.73;
+  font-weight: 400;
+  color: #595859;
+}
+@media only screen and (max-width: 767px) {
+  .card__price,
+.card .price .price-item {
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+}
+.card .yotpo {
+  display: none;
+}

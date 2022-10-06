@@ -1,0 +1,123 @@
+@import "variables";
+
+.image-with-table {
+  padding: 3.6rem 0 0;
+
+  @include media(tabletL) {
+    padding: 0;
+  }
+
+  &__inner {
+    display: flex;
+    background-color: $grey-color;
+    align-items: center;
+
+    @include media(tabletL) {
+      display: block;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    line-height: 1.33;
+    font-weight: 700;
+    margin-bottom: 4.9rem;
+
+    @include media(tablet) {
+      font-size: 2rem;
+      line-height: 1.4;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__img {
+    width: 43.76%;
+    height: 80.3rem;
+    background-size: cover;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+
+    @include media(tabletL) {
+      width: 100%;
+      height: 43.1rem;
+    }
+  }
+
+  &__content {
+    padding: 13.6rem 11.4rem;
+    width: 56.24%;
+
+    @include media(desktopS) {
+      padding: 5rem;
+    }
+
+    @include media(tabletL) {
+      width: 100%;
+      padding: 2.4rem 1.6rem 4rem;
+    }
+
+    table {
+      max-width: 61.3rem;
+      width: 100%;
+      border: 1px solid $black-color;
+      box-shadow: none !important;
+      color: $black-color;
+      table-layout: auto;
+
+      @include media(tabletL) {
+        max-width: 100%;
+      }
+
+      td,
+      th {
+        border-color: $black-color;
+      }
+
+      th {
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        font-weight: 500;
+        text-align: center;
+        padding: 1rem 2rem;
+
+        &:first-child {
+          text-align: left;
+        }
+
+        @include media(tablet) {
+          font-size: 1.4rem;
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+      }
+
+      td {
+        font-size: 1.3rem;
+        letter-spacing: 0.01em;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+        text-align: center;
+
+        &:first-child {
+          text-align: left;
+        }
+
+        @include media(tabletL) {
+          font-size: 1.2rem;
+          line-height: 1.33;
+          padding: 0.86rem 1rem;
+          vertical-align: middle;
+
+          img {
+            width: 2.1rem;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}

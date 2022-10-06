@@ -1,0 +1,65 @@
+@import "variables";
+
+.product-two-columns {
+  background: $grey-color;
+  padding: 87px 0 123px;
+
+  .product-colums {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -15px;
+    overflow: hidden;
+  }
+}
+
+.product-column-with-image {
+  width: 50%;
+  max-width: 570px;
+  margin: 0 15px;
+
+  img {
+    height: 100%;
+    max-height: 312px;
+    object-fit: cover;
+    width: 100%;
+    display: block;
+    margin: 0 0 30px;
+  }
+
+  h3 {
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0 0 11px;
+  }
+
+  .content {
+    color: $color-59;
+  }
+}
+
+@include media(tabletL) {
+  .product-two-columns {
+    padding: 59px 0 6px;
+    
+    .product-colums {
+      flex-wrap: wrap;
+      font-size: 16px;
+      margin: 0;
+    }
+  }
+
+  .product-column-with-image {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 53px;
+
+    img {
+      max-height: 196px;
+      margin: 0 0 20px;
+    }
+
+    h3 {
+      margin: 0 0 10px;
+    }
+  }
+}

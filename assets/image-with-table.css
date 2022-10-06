@@ -1,0 +1,119 @@
+.image-with-table {
+  padding: 3.6rem 0 0;
+}
+@media only screen and (max-width: 1023px) {
+  .image-with-table {
+    padding: 0;
+  }
+}
+.image-with-table__inner {
+  display: flex;
+  background-color: #F8F8F9;
+  align-items: center;
+}
+@media only screen and (max-width: 1023px) {
+  .image-with-table__inner {
+    display: block;
+  }
+}
+.image-with-table__title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  line-height: 1.33;
+  font-weight: 700;
+  margin-bottom: 4.9rem;
+}
+@media only screen and (max-width: 767px) {
+  .image-with-table__title {
+    font-size: 2rem;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+  }
+}
+.image-with-table__img {
+  width: 43.76%;
+  height: 80.3rem;
+  background-size: cover;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+}
+@media only screen and (max-width: 1023px) {
+  .image-with-table__img {
+    width: 100%;
+    height: 43.1rem;
+  }
+}
+.image-with-table__content {
+  padding: 13.6rem 11.4rem;
+  width: 56.24%;
+}
+@media only screen and (max-width: 1280px) {
+  .image-with-table__content {
+    padding: 5rem;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .image-with-table__content {
+    width: 100%;
+    padding: 2.4rem 1.6rem 4rem;
+  }
+}
+.image-with-table__content table {
+  max-width: 61.3rem;
+  width: 100%;
+  border: 1px solid #000;
+  box-shadow: none !important;
+  color: #000;
+  table-layout: auto;
+}
+@media only screen and (max-width: 1023px) {
+  .image-with-table__content table {
+    max-width: 100%;
+  }
+}
+.image-with-table__content table td,
+.image-with-table__content table th {
+  border-color: #000;
+}
+.image-with-table__content table th {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 1rem 2rem;
+}
+.image-with-table__content table th:first-child {
+  text-align: left;
+}
+@media only screen and (max-width: 767px) {
+  .image-with-table__content table th {
+    font-size: 1.4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+.image-with-table__content table td {
+  font-size: 1.3rem;
+  letter-spacing: 0.01em;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  text-align: center;
+}
+.image-with-table__content table td:first-child {
+  text-align: left;
+}
+@media only screen and (max-width: 1023px) {
+  .image-with-table__content table td {
+    font-size: 1.2rem;
+    line-height: 1.33;
+    padding: 0.86rem 1rem;
+    vertical-align: middle;
+  }
+  .image-with-table__content table td img {
+    width: 2.1rem;
+    height: auto;
+  }
+}

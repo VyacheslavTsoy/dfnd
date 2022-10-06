@@ -1,0 +1,97 @@
+.brands {
+  text-align: center;
+  padding: 11.8rem 0 13.2rem;
+  background-color: #F8F8F9;
+  letter-spacing: 0.01em;
+}
+.brands--white {
+  background-color: #fff;
+}
+@media only screen and (max-width: 1023px) {
+  .brands {
+    padding: 6.4rem 0 4.6rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .brands {
+    padding-bottom: 0;
+  }
+}
+.brands__title {
+  font-size: 2.4rem;
+  line-height: 1.33;
+  font-weight: 700;
+  margin-bottom: 3.8rem;
+}
+@media only screen and (max-width: 1023px) {
+  .brands__title {
+    font-size: 2rem;
+    line-height: 1.4;
+    margin-bottom: 1.8rem;
+  }
+}
+.brands__description {
+  max-width: 92rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 8.4rem;
+}
+@media only screen and (max-width: 1023px) {
+  .brands__description {
+    margin-bottom: 3rem;
+  }
+}
+.brands__items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 2.7rem;
+  grid-row-gap: 7.7rem;
+}
+.brands__items[data-items-per-row="3"] {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 15.4rem;
+  grid-row-gap: 12.8rem;
+  padding: 0 6.7rem 9.2rem;
+}
+@media only screen and (max-width: 1023px) {
+  .brands__items[data-items-per-row="3"] {
+    padding: 0;
+    grid-column-gap: 7rem;
+    grid-row-gap: 7rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .brands__items[data-items-per-row="3"] {
+    padding: 0 1.6rem 10.7rem;
+    margin-left: -1.6rem;
+    margin-right: -1.6rem;
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1.5rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .brands__items {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1.5rem;
+    background-color: #fff;
+    margin-left: -1.6rem;
+    margin-right: -1.6rem;
+    padding: 5rem 1.6rem;
+  }
+}
+.brands__item img {
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 767px) {
+  .page.about .brands__description {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 7.2rem;
+  }
+  .page.about .brands__items {
+    padding-bottom: 9.2rem;
+  }
+}

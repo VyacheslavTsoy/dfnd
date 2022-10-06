@@ -1,0 +1,115 @@
+.faq--section {
+  padding: 77px 0 180px;
+}
+.faq--section .faq__title {
+  text-align: center;
+  padding-top: 4rem;
+  margin-bottom: 5.5rem;
+  font-weight: 700;
+}
+@media only screen and (max-width: 767px) {
+  .faq--section .faq__title {
+    padding: 3rem 0 0;
+    margin-bottom: 3rem;
+  }
+}
+.faq--section.faq--small {
+  padding: 7.7rem 0 14.9rem;
+}
+@media only screen and (max-width: 767px) {
+  .faq--section.faq--small {
+    padding: 4.6rem 0 8.4rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .faq--section.faq--small .accordion__btn-opener {
+    font-size: 1.7rem;
+    letter-spacing: 0.01em;
+    padding: 1.8rem 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .faq--section.faq--small .faq__title {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: 2.2rem;
+    letter-spacing: -0.01em;
+    line-height: 1.27;
+    margin-bottom: 3.4rem;
+  }
+}
+.faq--section.faq--small .container {
+  max-width: 69rem;
+}
+.faq--section .container {
+  max-width: 969px;
+}
+.faq--section .accordion__slide {
+  border-bottom: 1px solid #e7eaee;
+  padding: 0 16px 8px 32px;
+}
+.faq--section .accordion__btn-opener {
+  background: transparent;
+  border: none;
+  font-size: 17px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #1F1F1F;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+  letter-spacing: 0.01em;
+  padding: 20px 0 11px;
+}
+.faq--section .accordion__btn-opener .icon {
+  width: 10px;
+  height: 10px;
+  display: block;
+  margin: 0 0 0 35px;
+  flex-basis: 10px;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.faq--section .accordion__btn-opener .icon path {
+  fill: #1F1F1F;
+}
+.faq--section .accordion-title {
+  text-align: left;
+}
+.faq--section .accordion__text {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+  margin: 0;
+  max-width: 750px;
+  font-size: 17px;
+  color: #525962;
+}
+.faq--section .accordion__slide.active .accordion__text {
+  max-height: 1000px;
+  transition: max-height 1s ease-in-out;
+  padding-bottom: 27px;
+}
+.faq--section .accordion__slide.active .icon {
+  transform: rotate(180deg);
+}
+@media only screen and (max-width: 767px) {
+  .faq--section {
+    padding: 37px 0 45px;
+  }
+  .faq--section .accordion__slide {
+    padding: 0;
+  }
+  .faq--section .accordion__slide.active {
+    padding: 0 0 8px;
+  }
+  .faq--section .accordion__btn-opener {
+    font-size: 16px;
+    padding: 11px 0 13px;
+  }
+  .faq--section .accordion__text {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,123 @@
+.video-with-text {
+  padding: 13.6rem 0 12.8rem;
+}
+@media only screen and (max-width: 1023px) {
+  .video-with-text {
+    padding: 8.2rem 0 8.9rem;
+  }
+}
+.video-with-text__img {
+  position: relative;
+}
+@media only screen and (max-width: 767px) {
+  .video-with-text__img {
+    margin-bottom: 3.7rem;
+  }
+}
+.video-with-text__img img {
+  width: 100%;
+  height: auto;
+}
+.video-with-text .video-play-button {
+  position: absolute;
+}
+.flex-row-reverse .video-with-text__description {
+  padding: 0 6rem 7rem 9rem;
+}
+@media only screen and (max-width: 1023px) {
+  .flex-row-reverse .video-with-text__description {
+    padding: 0;
+  }
+}
+.video-with-text__description {
+  letter-spacing: 0.01em;
+  padding: 0 8rem 1.5rem 6rem;
+}
+@media only screen and (max-width: 1023px) {
+  .video-with-text__description {
+    padding: 0;
+  }
+}
+.video-with-text__description .button {
+  min-width: 25.6rem;
+}
+.video-with-text__logo {
+  margin-bottom: 3.1rem;
+}
+@media only screen and (max-width: 1023px) {
+  .video-with-text__logo img {
+    max-width: 20rem;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .video-with-text__logo {
+    max-width: 29.9rem;
+  }
+  .video-with-text__logo img {
+    max-width: 100%;
+  }
+}
+.video-with-text__text {
+  margin-bottom: 6rem;
+}
+@media only screen and (max-width: 1023px) {
+  .video-with-text__text {
+    margin-bottom: 3rem;
+  }
+}
+
+.text-features {
+  padding: 7.2rem 0 0;
+}
+@media only screen and (max-width: 767px) {
+  .text-features {
+    padding: 9.6rem 0 0;
+  }
+}
+.text-features__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 2.5rem;
+}
+@media only screen and (max-width: 767px) {
+  .text-features__inner {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+}
+.text-features__item {
+  background-color: #F8F8F9;
+  text-align: center;
+  padding: 4.5rem 2.8rem 4.2rem;
+  min-height: 100%;
+}
+@media only screen and (max-width: 767px) {
+  .text-features__item {
+    padding: 2.5rem 1.4rem 3rem;
+  }
+}
+.text-features__item-icon {
+  margin-bottom: 5rem;
+}
+@media only screen and (max-width: 767px) {
+  .text-features__item-icon {
+    margin-bottom: 3rem;
+  }
+}
+.text-features__item-title {
+  font-size: 2rem;
+  line-height: 1.172;
+  color: #1F1F1F;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 1.6rem;
+}
+@media only screen and (max-width: 767px) {
+  .text-features__item-title {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+}
+.text-features__item p:last-child {
+  margin-bottom: 0;
+}

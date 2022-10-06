@@ -1,0 +1,167 @@
+@import "variables";
+
+.collections-description {
+  padding-top: 9.3rem;
+  margin-bottom: -6rem;
+  text-align: center;
+
+  @include media(tablet) {
+    padding-top: 3.2rem;
+    margin-bottom: 0;
+  }
+
+  .collections-preview {
+
+    &__description {
+      margin-bottom: 0;
+
+      img {
+        max-width: 100%;
+        height: auto;
+        display: none;
+      }
+
+      @include media(tablet) {
+        text-align: center;
+      }
+
+      h2,
+      h3 {
+        display: none;
+      }
+
+      p {
+        text-align: left !important;
+
+        @include media(tablet) {
+          text-align: center !important;
+        }
+      }
+    }
+
+    &__title {
+      margin-bottom: 1.7rem;
+      text-align: left;
+
+      @include media(tablet) {
+        margin-bottom: 1.1rem;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.collections-preview {
+
+  &__title {
+    font-size: 3rem;
+    line-height: 1.16;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+
+    @include media(tablet) {
+      font-size: 2rem;
+      line-height: 2.8rem;
+      margin-bottom: 1.2rem;
+    }
+  }
+
+  &__item {
+    padding: 10.3rem 0 14.6rem;
+
+    &:nth-child(even) {
+      background-color: $grey-color;
+    }
+
+    @include media(tablet) {
+      padding: 3.6rem 0 5rem;
+    }
+  }
+
+  &__description {
+    font-size: 1.7rem;
+    line-height: 1.52;
+    max-width: 95rem;
+    padding-right: 4rem;
+    margin-bottom: 6.3rem;
+    letter-spacing: 0.01em;
+
+    @include media(tablet) {
+      margin-bottom: 3.1rem;
+      padding-right: 0;
+      font-size: 1.6rem;
+      line-height: 1.5;
+    }
+
+    p {
+      margin-bottom: 1.52em;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .order-last &__main-img {
+    padding: 0 0 0 6.6rem;
+
+    @include media(tabletL) {
+      padding-left: 0;
+    }
+  }
+
+  &__main-img {
+    padding-right: 6.6rem;
+
+    @include media(tabletL) {
+      padding-right: 0;
+    }
+
+    @include media(tablet) {
+      display: none;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  .product-card {
+    &__img {
+      @include media(desktop) {
+        height: auto;
+      }
+    }
+  }
+}
+
+// .page {
+//   &.fire-dfnd {
+//     .collections-description {
+//       margin-bottom: 0;
+//       background-color: $grey-color;
+//     }
+
+//     @include media(tabletL) {
+//       .collections-description {
+//         padding: 47px 0 88px;
+
+//         .collections-preview__title {
+//           margin: 0 auto 17px;
+//           max-width: 250px;
+//         }
+
+//         p {
+//           strong {
+//             font-size: 17px;
+//             line-height: 32px;
+//             color: $dark-color;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
